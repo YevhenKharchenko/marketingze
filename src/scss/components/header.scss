@@ -1,0 +1,73 @@
+.header {
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+.header-container {
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media(desktop) {
+  }
+}
+
+.logo-icon {
+}
+
+.header-logo-link {
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+  }
+}
+
+.nav-list-link {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3c234f;
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+  }
+}
+
+.nav-list-link.active {
+}
+
+.nav-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.menu-icon {
+}

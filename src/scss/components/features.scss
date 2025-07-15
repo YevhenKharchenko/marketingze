@@ -1,0 +1,71 @@
+.features-section {
+  background: #f0f0f0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.features-list-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+
+  @include media(desktop) {
+    max-width: 352px;
+    min-height: 142px;
+  }
+}
+
+.features-item-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.features-item-title {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3c234f;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.features-icon {
+  fill: none;
+}
+
+.features-item-text {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #615c65;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}

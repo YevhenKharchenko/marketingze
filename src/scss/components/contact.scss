@@ -1,0 +1,113 @@
+.contact-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.contact-text {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3c234f;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-email-text {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3c234f;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-email-link {
+  font-weight: 400;
+  font-size: 16px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.contact-socials-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contact-solials-text {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3c234f;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  @include media(desktop) {
+    gap: 32px;
+  }
+}
+
+.contact-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hashtags-text {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3c234f;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.contact-hashtags-span {
+  font-weight: 400;
+  font-size: 16px;
+  color: #9e54d7;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.contact-bottom-text {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #615c65;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}

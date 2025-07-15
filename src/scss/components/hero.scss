@@ -1,0 +1,93 @@
+.hero-section {
+}
+
+.hero-wrapper {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-image: url(../img/hero/hero-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    padding-top: 140px;
+    background-image: url(../img/hero/hero-bg-desk.png);
+    background-position: bottom right;
+    max-width: 1440px;
+  }
+}
+
+.hero-title {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #9e54d7;
+
+  @include media(desktop) {
+    font-size: 72px;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #3c234f;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    font-size: 48px;
+  }
+}
+
+.hero-text {
+  font-family: 'Teachers', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3c234f;
+  margin-bottom: 80px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 736px;
+  }
+}
+
+.hero-btn-wrapper {
+  @include media(desktop) {
+    max-width: 256px;
+    margin-left: 0;
+  }
+}
+
+.hero-btn {
+  background: #fcc000;
+  border-radius: 8px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Teachers', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #3c234f;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  &:active {
+    background: #fffcc5;
+  }
+
+  @include media(desktop) {
+    &:hover {
+      background: #fffcc5;
+    }
+  }
+}
