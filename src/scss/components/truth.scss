@@ -1,0 +1,71 @@
+.truth-section {
+  padding-bottom: 100px;
+
+  @include media(desktop) {
+    padding-bottom: 270px;
+  }
+}
+
+.truth-title {
+  margin-bottom: 30px;
+}
+
+.truth-subtitle {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.truth-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.truth-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 155px;
+  }
+}
+
+.truth-list-item {
+  box-shadow: 0 0 70px 0 #ff5a5f;
+  background: #fff;
+  border-radius: 100%;
+  padding: 35px 48px;
+  width: 100%;
+  max-width: 321px;
+  min-height: 100px;
+
+  @include media(desktop) {
+    &:nth-child(2) {
+      position: relative;
+      bottom: -130px;
+    }
+  }
+}
+
+.truth-item-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}

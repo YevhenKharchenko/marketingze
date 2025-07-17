@@ -9,5 +9,8 @@
     <symbol id="icon-right-arrow" viewBox="0 0 65 32">
       <path d="M64.78 17.206a2.086 2.086 0 0 0 0-2.951L51.499.974a2.086 2.086 0 1 0-2.951 2.951l11.806 11.806-11.806 11.806a2.086 2.086 0 1 0 2.951 2.951L64.78 17.207zM.696 15.73v2.087h62.609v-4.174H.696v2.087z"/>
     </symbol>
+     <symbol id="icon-close" viewBox="0 0 33 32">
+      <path stroke-linecap="round" stroke-width="2.909" d="M30.833 30.105 2.622 1.894M2.622 30.105 30.833 1.894"/>
+    </symbol>
   </defs>
 </svg>

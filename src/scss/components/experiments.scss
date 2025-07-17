@@ -1,0 +1,59 @@
+.experiments-section {
+  padding-bottom: 100px;
+
+  @include media(desktop) {
+    padding-bottom: 140px;
+  }
+}
+
+.experiments-title {
+  margin-bottom: 30px;
+}
+
+.experiments-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #1a1a1a;
+
+  &:not(:last-child) {
+    margin-bottom: 61px;
+  }
+}
+
+.experiments-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.experiments-list-item {
+  background: #fff;
+  border: 4px solid #36f;
+  border-radius: 12px;
+  padding: 30px 8px;
+  width: 100%;
+  max-width: 343px;
+  min-height: 107px;
+
+  @include media(desktop) {
+    padding: 30px 42px;
+    max-width: 411px;
+  }
+}
+
+.experiments-item-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+}

@@ -1,25 +1,24 @@
 .hero-section {
-}
-
-.hero-wrapper {
   padding-top: 121px;
   padding-bottom: 100px;
-  background-image: url(../img/hero/hero-arrow-top-mob.png),
-    url(../img/hero/hero-arrow-down-mob.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left bottom 320px, right bottom 320px;
-  background-size: auto, auto;
-  max-width: 375px;
-  margin: 0 auto;
 
   @include media(desktop) {
     padding-top: 211px;
     padding-bottom: 140px;
+  }
+}
+
+.hero-container {
+  background-image: url(../img/hero/hero-arrow-top-mob.png),
+    url(../img/hero/hero-arrow-down-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top 220px, right top 220px;
+  background-size: auto, auto;
+
+  @include media(desktop) {
     background-image: url(../img/hero/hero-arrow-right-desk.png),
       url(../img/hero/hero-arrow-left-desk.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left 475px top 352px, left 475px bottom 272px;
-    max-width: 1440px;
+    background-position: left 475px top 141px, left 475px bottom 132px;
   }
 }
 
