@@ -1,0 +1,147 @@
+.deck-section {
+  padding-bottom: 100px;
+
+  @include media(desktop) {
+    padding-bottom: 140px;
+  }
+}
+
+.deck-title {
+  margin-bottom: 30px;
+}
+
+.deck-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 49px;
+  }
+}
+
+.deck-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 128px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 114px 133px;
+    max-width: 1172px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.deck-list-item {
+  background: #ff5a5f;
+  border-radius: 12px;
+  padding: 28px 34px;
+  width: 100%;
+  max-width: 302px;
+  min-height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 87px;
+    top: 100%;
+    margin-top: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url(../img/deck/deck-arrow-down-mob.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  @include media(desktop) {
+    &:not(:last-child)::after {
+      content: none;
+      width: 0;
+      height: 0;
+      background: none;
+      margin: 0;
+    }
+
+    &:nth-child(1)::after {
+      content: '';
+      position: absolute;
+      width: 87px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100%;
+      margin-left: 23px;
+      background-image: url(../img/deck/deck-arrow-right-desk.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &:nth-child(2)::after {
+      content: '';
+      position: absolute;
+      width: 87px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100%;
+      margin-left: 23px;
+      background-image: url(../img/deck/deck-arrow-right-desk.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &:nth-child(3)::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 87px;
+      top: 100%;
+      margin-top: 21px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(../img/deck/deck-arrow-down-desk.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+
+    &:nth-child(4)::after {
+      content: '';
+      position: absolute;
+      width: 87px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100%;
+      margin-left: 23px;
+      background-image: url(../img/deck/deck-arrow-left-desk.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+}
+
+.deck-item-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}

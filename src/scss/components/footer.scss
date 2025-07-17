@@ -1,32 +1,41 @@
 .footer {
-  background: #3c234f;
-  padding-top: 40px;
-  padding-bottom: 16px;
+  padding-bottom: 48px;
+
+  @include media(desktop) {
+    font-size: 41px;
+  }
 }
 
 .footer-nav {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .footer-list {
   display: flex;
-  flex-direction: column;
-  align-items: end;
-  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-list-item {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-link {
-  font-family: 'Teachers', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: right;
-  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
   transition: all 0.3s ease-in-out;
-
-  @include media(desktop) {
-    font-size: 18px;
-  }
 
   &:hover,
   &:focus {
@@ -34,14 +43,9 @@
 }
 
 .footer-text {
-  font-family: 'Teachers', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
-  font-size: 11px;
-  line-height: 1.5;
-  text-align: right;
-  color: #fff;
-
-  @include media(desktop) {
-    font-size: 12px;
-  }
+  font-size: 18px;
+  text-align: center;
+  color: #000;
 }

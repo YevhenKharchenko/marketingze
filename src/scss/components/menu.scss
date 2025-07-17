@@ -1,8 +1,7 @@
 .context-menu {
-  background: #f0f0f0;
-  border-radius: 8px;
-  padding: 28px;
-  max-width: 343px;
+  background: #e5e7eb;
+  padding: 26px 12px;
+  max-width: 225px;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
@@ -13,7 +12,7 @@
   left: 0;
   z-index: 10;
   height: 100%;
-  max-height: 424px;
+  max-height: 340px;
   overflow: visible;
   transform: translateY(100%);
   opacity: 0;
@@ -41,7 +40,7 @@
 }
 
 .close-icon {
-  stroke: #3c234f;
+  stroke: #000;
 }
 
 .context-nav {
@@ -51,15 +50,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 21px;
 }
 
 .context-list-link {
-  font-family: 'Teachers', sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.3;
-  color: #3c234f;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #1a1a1a;
   transition: all 0.3s ease-in-out;
 
   &:active {

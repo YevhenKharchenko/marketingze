@@ -1,0 +1,127 @@
+.slidecraft-section {
+}
+
+.slidecraft-section-wrapper {
+  padding-bottom: 100px;
+  max-width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-bottom: 140px;
+    max-width: 1440px;
+  }
+}
+
+.slidecraft-container {
+}
+
+.slidecraft-title {
+  margin-bottom: 20px;
+}
+
+.slidecraft-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #1a1a1a;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+.slidecraft-swiper-container {
+  max-width: 343px;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 468px;
+    overflow: hidden;
+  }
+}
+
+.slidecraft-swiper-container.show {
+  visibility: visible;
+}
+
+.slidecraft-slide {
+  box-shadow: 0 0 40px 0 rgba(51, 102, 255, 0.6);
+  background: #36f;
+  border-radius: 12px;
+  max-width: 343px;
+  padding: 61px 24px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  @include media(desktop) {
+    max-width: 468px;
+    box-shadow: none;
+  }
+}
+
+.slidecraft-slide-text {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #f9fafb;
+}
+
+.arrow-icon {
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 201px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 28px;
+  margin-bottom: 45px;
+
+  @include media(desktop) {
+    max-width: 411px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.slidecraft-controls-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
